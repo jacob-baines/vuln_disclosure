@@ -1,0 +1,30 @@
+Date: 06/24/2021
+Affected Product: RemotePC
+Product Website: https://www.remotepc.com/
+Vulnerable Versions: RemotePC for Windows before 7.6.48 and RemotePC for Linux before 4.0.1
+Patched Versions: RemotePC for Windows 7.6.48 and RemotePC for Linux 4.0.1
+
+# CVE-2021-34687 (CWE-200)
+
+RemotePC before 7.6.48 on Windows allows information disclosure. A man in the middle can recover a system's Personal Key when a client attempts to make a LAN connection. The Personal Key is only lightly, and reversibly, obfuscated before being transmitted over the network.
+
+# CVE-2021-34688 (CWE-200)
+
+RemotePC before 7.6.48 on Windows allows information disclosure. A locally authenticated attacker can read an encrypted version of the system's Personal Key in world-readable %PROGRAMDATA% log files. The encryption is done using a hard-coded static key and is therefore reversible by an attacker.
+
+# CVE-2021-34689 (CWE-200)
+
+RemotePC before 7.6.48 on Windows allows information disclosure. A locally authenticated attacker can read the system's Personal Key in world-readable %PROGRAMDATA% log file.
+
+# CVE-2021-34690 (CWE-288)
+
+RemotePC before 7.6.48 on Windows allows authentication bypass. A remote and unauthenticated attacker can bypass cloud authentication to connect and control a system via TCP port 5970 and 5980.
+
+# CVE-2021-34691 (CWE-841)
+
+RemotePC before 4.0.1 on Linux allows denial of service. A remote and unauthenticated attacker can disconnect a valid user session by connecting to an ephemeral port.
+
+# CVE-2021-34692 (CWE-269)
+
+RemotePC before 7.6.48 on Windows allows privilege escalation. A local and low-privileged user can force RemotePC to execute an attacker-controlled executable with SYSTEM privileges.
+
