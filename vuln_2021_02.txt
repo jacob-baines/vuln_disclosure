@@ -5,7 +5,7 @@ Vulnerable Versions: Universal Print Driver v2.15.1.0 and below.
 Patched Version: Universal Print Driver v2.15.2.0 and above.
 Vendor Advisory: http://support.lexmark.com/index?page=content&id=TE953
 
-# CVE-2021-2021-35449 (CWE-732)
+# CVE-2021-35449 (CWE-732)
 
 Lexmark Universal Print Driver version 2.15.1.0 and below is affected by a privilege escalation vulnerability. A standard low priviliged user can use the driver to execute a DLL of their choosing during the add printer process, resulting in escalation of privileges to SYSTEM.
 
