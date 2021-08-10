@@ -1,0 +1,13 @@
+Date: 08/07/2021
+Affected Product: Canon TR150 Print Driver
+Product Website: https://www.usa.canon.com/internet/portal/us/home/support/details/printers/mobile-compact-printer/pixma-tr150
+Vulnerable Versions: Universal Print Driver v2.15.1.0 and below.
+Patched Version: No patch exists
+Vendor Advisory: N/A
+
+# CVE-2021-38085 (CWE-732)
+
+The Canon TR150 print driver 3.71.2.10 is vulnerable to a privilege escalation issue. During the add printer process, a local attacker can overwrite a DLL and, if timed properly, the overwritten DLL will be loaded into a SYSTEM process resulting in escalation of privileges. This occurs because the driver drops a world-writable DLL into %PROGRAMDATA% that gets loaded bya system process.
+
+CVSSv3: AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H (7.8)
+
