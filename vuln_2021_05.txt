@@ -1,0 +1,12 @@
+Date: 10/01/2021
+Affected Product: mySCADA myDESIGNER
+Product Website: https://www.myscada.org/mydesigner/
+Vulnerable Versions: 8.20.0 and below
+Patched Version: 8.21.0
+Vendor Advisory: N/A
+
+# CVE-2021-41578
+
+mySCADA myDESIGNER version 8.20.0 and below is vulnerable to a zip slip issue that allows an adversary to write arbitrary files on disk where myDESIGNER has permission. If an attacker can trick a user into loading a malicious mep file then they can leverage this issue for code execution.
+
+CVSSv3: AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H (7.8)
